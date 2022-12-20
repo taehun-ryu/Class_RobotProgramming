@@ -13,8 +13,12 @@ based on the position relative to the network module.
 # Let say you run the code below, then one of the four cases below will occur
 if __name__ == "__main__":
     bundle = modi.MODI()
-    led1 = bundle.leds[0]
-    led2 = bundle.leds[1]
+    motor0 = bundle.motors[0]
+    motor1 = bundle.motors[1]
+    motor2 = bundle.motors[2]
+    motor3 = bundle.motors[3]
+    motor4 = bundle.motors[4]
+    motor5 = bundle.motors[5]
     bundle.print_topology_map(print_id=True)
 
 """
