@@ -154,6 +154,7 @@ def initializeStack():
 
 def startStack():
     print(">>동작배열 한번 실행")
+    print("현재 동작 배열",move_for_stack,"\n")
 
 def startWhileStack():
     global keep_going
