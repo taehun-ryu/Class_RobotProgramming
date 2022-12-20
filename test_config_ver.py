@@ -2,6 +2,7 @@
 motor_config.py 파일의 테스트 버전.
 Author: Ryu Taehun
 >>주의: joystick코드 작성 후 update한거라 joystick코드의 모터 배열과는 다름.
+Finish to check it is work. It is work. 2022-12-20
 """
 
 import tkinter as tk
@@ -12,12 +13,12 @@ import threading as th
 
 bundle = modi.MODI()
 motor=[None]*6
-motor[0]=bundle.motors.get(929)     # 1번 모터_ 왼쪽 앞
-motor[1]=bundle.motors.get(2098)    # 2번 모터_ 왼쪽 중간
-motor[2]=bundle.motors.get(3357)    # 3번 모터_ 왼쪽 뒤
-motor[3]=bundle.motors.get(2420)    # 4번 모터_ 오른쪽 앞
-motor[4]=bundle.motors.get(620)     # 5번 모터_ 오른쪽 중간
-motor[5]=bundle.motors.get(3769)    # 6번 모터_ 오른쪽 뒤
+motor[0]=bundle.motors.get(2420)     # 1번 모터_ 왼쪽 앞
+motor[1]=bundle.motors.get(620)    # 2번 모터_ 왼쪽 중간
+motor[2]=bundle.motors.get(3769)    # 3번 모터_ 왼쪽 뒤
+motor[3]=bundle.motors.get(929)    # 4번 모터_ 오른쪽 앞
+motor[4]=bundle.motors.get(2098)     # 5번 모터_ 오른쪽 중간
+motor[5]=bundle.motors.get(3357)    # 6번 모터_ 오른쪽 뒤
 
 bundle.print_topology_map(print_id=True)
 
